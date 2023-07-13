@@ -1,0 +1,52 @@
+{
+    "LOCALHOST_8545": {
+        "MyToken": {
+            "ADDRESS": "",
+            "BLOCK_NUMBER": 0
+        },
+        "IcoManager": {
+            "ADDRESS": "",
+            "BLOCK_NUMBER": 0
+        }
+    },
+    "LOCALHOST_8546": {
+        "MyToken": {
+            "ADDRESS": "",
+            "BLOCK_NUMBER": 0
+        },
+        "IcoManager": {
+            "ADDRESS": "",
+            "BLOCK_NUMBER": 0
+        }
+    },
+    "ETH_MAIN": {
+        "MyToken": {
+            "ADDRESS": "",
+            "BLOCK_NUMBER": 0
+        },
+        "IcoManager": {
+            "ADDRESS": "",
+            "BLOCK_NUMBER": 0
+        }
+    },
+    "BSC_MAIN": {
+        "MyToken": {
+            "ADDRESS": "",
+            "BLOCK_NUMBER": 0
+        },
+        "IcoManager": {
+            "ADDRESS": "",
+            "BLOCK_NUMBER": 0
+        }
+    },
+    "BSC_TEST": {
+        "MyToken": {
+            "ADDRESS": "",
+            "BLOCK_NUMBER": 0
+        },
+        "IcoManager": {
+            "ADDRESS": "",
+            "BLOCK_NUMBER": 0
+        }
+    }
+}

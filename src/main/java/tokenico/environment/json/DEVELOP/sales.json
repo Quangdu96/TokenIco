@@ -1,0 +1,14 @@
+{
+    "PUBLIC_SALE": {
+        "startTime": "0",
+        "endTime":   "9999999999",
+        "price": "2000000000",
+        "openStatus": false
+    },
+    "SALE_01": {
+        "startTime": "1672531200",
+        "endTime":   "1704067200",
+        "price": "1000000000",
+        "openStatus": false
+    }
+}

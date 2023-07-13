@@ -1,0 +1,412 @@
+{
+    "LOCALHOST_8545": {
+        "MyToken": {
+            "deploy" : {
+                "GAS_PRICE": "10000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "approve" : {
+                "GAS_PRICE": "10000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "decreaseAllowance" : {
+                "GAS_PRICE": "10000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "increaseAllowance" : {
+                "GAS_PRICE": "10000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "transfer" : {
+                "GAS_PRICE": "10000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "transferFrom" : {
+                "GAS_PRICE": "10000000000",
+                "GAS_LIMIT": "2000000"
+            }
+        },
+        "IcoManager": {
+            "deploy" : {
+                "GAS_PRICE": "10000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "addSale" : {
+                "GAS_PRICE": "10000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "batchIncreaseAllowance" : {
+                "GAS_PRICE": "10000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "batchSetAllowance" : {
+                "GAS_PRICE": "10000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "buy" : {
+                "GAS_PRICE": "10000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "editSaleEndTime" : {
+                "GAS_PRICE": "10000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "editSaleOpenStatus" : {
+                "GAS_PRICE": "10000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "editSalePrice" : {
+                "GAS_PRICE": "10000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "editSaleStartTime" : {
+                "GAS_PRICE": "10000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "increaseAllowance" : {
+                "GAS_PRICE": "10000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "setAllowance" : {
+                "GAS_PRICE": "10000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "stop" : {
+                "GAS_PRICE": "10000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "withdraw" : {
+                "GAS_PRICE": "10000000000",
+                "GAS_LIMIT": "2000000"
+            }
+        }
+    },
+    "LOCALHOST_8546": {
+        "MyToken": {
+            "deploy" : {
+                "GAS_PRICE": "10000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "approve" : {
+                "GAS_PRICE": "10000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "decreaseAllowance" : {
+                "GAS_PRICE": "10000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "increaseAllowance" : {
+                "GAS_PRICE": "10000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "transfer" : {
+                "GAS_PRICE": "10000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "transferFrom" : {
+                "GAS_PRICE": "10000000000",
+                "GAS_LIMIT": "2000000"
+            }
+        },
+        "IcoManager": {
+            "deploy" : {
+                "GAS_PRICE": "10000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "addSale" : {
+                "GAS_PRICE": "10000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "batchIncreaseAllowance" : {
+                "GAS_PRICE": "10000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "batchSetAllowance" : {
+                "GAS_PRICE": "10000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "buy" : {
+                "GAS_PRICE": "10000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "editSaleEndTime" : {
+                "GAS_PRICE": "10000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "editSaleOpenStatus" : {
+                "GAS_PRICE": "10000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "editSalePrice" : {
+                "GAS_PRICE": "10000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "editSaleStartTime" : {
+                "GAS_PRICE": "10000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "increaseAllowance" : {
+                "GAS_PRICE": "10000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "setAllowance" : {
+                "GAS_PRICE": "10000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "stop" : {
+                "GAS_PRICE": "10000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "withdraw" : {
+                "GAS_PRICE": "10000000000",
+                "GAS_LIMIT": "2000000"
+            }
+        }
+    },
+    "ETH_MAIN": {
+        "MyToken": {
+            "deploy" : {
+                "GAS_PRICE": "35000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "approve" : {
+                "GAS_PRICE": "35000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "decreaseAllowance" : {
+                "GAS_PRICE": "35000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "increaseAllowance" : {
+                "GAS_PRICE": "35000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "transfer" : {
+                "GAS_PRICE": "35000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "transferFrom" : {
+                "GAS_PRICE": "35000000000",
+                "GAS_LIMIT": "2000000"
+            }
+        },
+        "IcoManager": {
+            "deploy" : {
+                "GAS_PRICE": "35000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "addSale" : {
+                "GAS_PRICE": "35000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "batchIncreaseAllowance" : {
+                "GAS_PRICE": "35000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "batchSetAllowance" : {
+                "GAS_PRICE": "35000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "buy" : {
+                "GAS_PRICE": "35000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "editSaleEndTime" : {
+                "GAS_PRICE": "35000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "editSaleOpenStatus" : {
+                "GAS_PRICE": "35000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "editSalePrice" : {
+                "GAS_PRICE": "35000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "editSaleStartTime" : {
+                "GAS_PRICE": "35000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "increaseAllowance" : {
+                "GAS_PRICE": "35000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "setAllowance" : {
+                "GAS_PRICE": "35000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "stop" : {
+                "GAS_PRICE": "35000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "withdraw" : {
+                "GAS_PRICE": "35000000000",
+                "GAS_LIMIT": "2000000"
+            }
+        }
+    },
+    "BSC_MAIN": {
+        "MyToken": {
+            "deploy" : {
+                "GAS_PRICE": "5000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "approve" : {
+                "GAS_PRICE": "5000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "decreaseAllowance" : {
+                "GAS_PRICE": "5000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "increaseAllowance" : {
+                "GAS_PRICE": "5000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "transfer" : {
+                "GAS_PRICE": "5000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "transferFrom" : {
+                "GAS_PRICE": "5000000000",
+                "GAS_LIMIT": "2000000"
+            }
+        },
+        "IcoManager": {
+            "deploy" : {
+                "GAS_PRICE": "5000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "addSale" : {
+                "GAS_PRICE": "5000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "batchIncreaseAllowance" : {
+                "GAS_PRICE": "5000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "batchSetAllowance" : {
+                "GAS_PRICE": "5000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "buy" : {
+                "GAS_PRICE": "5000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "editSaleEndTime" : {
+                "GAS_PRICE": "5000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "editSaleOpenStatus" : {
+                "GAS_PRICE": "5000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "editSalePrice" : {
+                "GAS_PRICE": "5000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "editSaleStartTime" : {
+                "GAS_PRICE": "5000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "increaseAllowance" : {
+                "GAS_PRICE": "5000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "setAllowance" : {
+                "GAS_PRICE": "5000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "stop" : {
+                "GAS_PRICE": "5000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "withdraw" : {
+                "GAS_PRICE": "5000000000",
+                "GAS_LIMIT": "2000000"
+            }
+        }
+    },
+    "BSC_TEST": {
+        "MyToken": {
+            "deploy" : {
+                "GAS_PRICE": "12000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "approve" : {
+                "GAS_PRICE": "12000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "decreaseAllowance" : {
+                "GAS_PRICE": "12000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "increaseAllowance" : {
+                "GAS_PRICE": "12000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "transfer" : {
+                "GAS_PRICE": "12000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "transferFrom" : {
+                "GAS_PRICE": "12000000000",
+                "GAS_LIMIT": "2000000"
+            }
+        },
+        "IcoManager": {
+            "deploy" : {
+                "GAS_PRICE": "12000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "addSale" : {
+                "GAS_PRICE": "12000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "batchIncreaseAllowance" : {
+                "GAS_PRICE": "12000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "batchSetAllowance" : {
+                "GAS_PRICE": "12000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "buy" : {
+                "GAS_PRICE": "12000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "editSaleEndTime" : {
+                "GAS_PRICE": "12000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "editSaleOpenStatus" : {
+                "GAS_PRICE": "12000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "editSalePrice" : {
+                "GAS_PRICE": "12000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "editSaleStartTime" : {
+                "GAS_PRICE": "12000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "increaseAllowance" : {
+                "GAS_PRICE": "12000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "setAllowance" : {
+                "GAS_PRICE": "12000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "stop" : {
+                "GAS_PRICE": "12000000000",
+                "GAS_LIMIT": "2000000"
+            },
+            "withdraw" : {
+                "GAS_PRICE": "12000000000",
+                "GAS_LIMIT": "2000000"
+            }
+        }
+    }
+}
