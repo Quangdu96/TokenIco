@@ -7,9 +7,12 @@ import java.util.stream.Collectors;
 
 import org.web3j.crypto.Credentials;
 import org.web3j.tuples.generated.Tuple6;
+import org.web3j.tx.Contract;
 
 import lombok.Getter;
 import lombok.ToString;
+import lombok.experimental.Accessors;
+
 import tokenico.environment.ProjectContract;
 import tokenico.environment.ProjectContractStorageProvider;
 import tokenico.environment.ProjectCredential;
@@ -19,10 +22,9 @@ import tokenico.environment.ProjectNetwork;
 import tokenico.environment.ProjectProviderFailureException;
 import tokenico.environment.ico.ProjectSaleProvider;
 import tokenico.generated.contracts.IcoManager;
-import tokenico.generated.contracts.MyToken;
 import tokenico.models.Sale;
 
-@Getter
+@Getter @Accessors(fluent = true)
 @ToString(callSuper = true)
 public class IcoManagerController extends ContractController {
 
@@ -55,34 +57,30 @@ public class IcoManagerController extends ContractController {
         throwIfUndeployed();
 
         return IcoManager.load(
-            projectContractStorageProvider.getAddress(network, contractName),
-            web3j,
-            projectCredentialProvider.getCredential(caller),
-            projectGasProvider.getGasProvider(network, contractName));
+            projectContractStorageProvider().getAddress(network(), contractName()),
+            web3j(),
+            projectCredentialProvider().getCredential(caller),
+            projectGasProvider().getGasProvider(network(), contractName()));
     }
 
     protected final IcoManager loadContract(Credentials caller) throws ProjectProviderFailureException {
         throwIfUndeployed();
         
         return IcoManager.load(
-            projectContractStorageProvider.getAddress(network, contractName),
-            web3j,
+            projectContractStorageProvider().getAddress(network(), contractName()),
+            web3j(),
             caller,
-            projectGasProvider.getGasProvider(network, contractName));
+            projectGasProvider().getGasProvider(network(), contractName()));
     }
 
     @Override
-    public void deploy() throws Exception {
-        IcoManager icoManager = IcoManager.deploy(
-            web3j,
-            projectCredentialProvider.getCredential(ProjectCredential.ADMIN),
-            projectGasProvider.getGasProvider(network, contractName),
-            projectCredentialProvider.getAddress(ProjectCredential.INCOME_RECEIVER)
+    protected Contract deployImpl() throws Exception {
+        return IcoManager.deploy(
+            web3j(),
+            projectCredentialProvider().getCredential(ProjectCredential.ADMIN),
+            projectGasProvider().getGasProvider(network(), contractName()),
+            projectCredentialProvider().getAddress(ProjectCredential.INCOME_RECEIVER)
         ).send();
-
-        saveDeployedContract(icoManager);
-        this.address = icoManager.getContractAddress();
-        this.deployed = true;
     }
 
     /* ********************************************************************************************** */
@@ -90,13 +88,11 @@ public class IcoManagerController extends ContractController {
     public void increaseFund(BigInteger amount) throws Exception {
         throwIfUndeployed();
 
-        MyToken myToken = MyToken.load(
-            projectContractStorageProvider.getAddress(network, ProjectContract.MY_TOKEN),
-            web3j,
-            projectCredentialProvider.getCredential(ProjectCredential.ADMIN),
-            projectGasProvider.getGasProvider(network, ProjectContract.MY_TOKEN));
+        MyTokenController myTokenController = MyTokenController.newInstance(
+            network(), projectContractStorageProvider(),
+            projectCredentialProvider(), projectGasProvider());
 
-        myToken.transfer(address, amount).send();
+        myTokenController.transfer(ProjectCredential.ADMIN, address(), amount);
     }
 
     /* ********************************************************************************************** */
@@ -205,5 +201,9 @@ public class IcoManagerController extends ContractController {
         IcoManager icoManager = loadContract(buyer);
 
         icoManager.buy(saleId, amount, amount.multiply(sale.price())).send();
+    }
+
+    public void buy(String saleId, ProjectCredential buyer, BigInteger amount) throws Exception {
+        buy(saleId, projectCredentialProvider().getCredential(buyer), amount);
     }
 }

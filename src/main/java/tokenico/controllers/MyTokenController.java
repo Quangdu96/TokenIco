@@ -1,8 +1,12 @@
 package tokenico.controllers;
 
+import java.math.BigInteger;
+
 import org.web3j.crypto.Credentials;
+import org.web3j.tx.Contract;
 
 import lombok.ToString;
+
 import tokenico.environment.ProjectContract;
 import tokenico.environment.ProjectContractStorageProvider;
 import tokenico.environment.ProjectCredential;
@@ -38,33 +42,36 @@ public class MyTokenController extends ContractController {
         throwIfUndeployed();
 
         return MyToken.load(
-            projectContractStorageProvider.getAddress(network, contractName),
-            web3j,
-            projectCredentialProvider.getCredential(caller),
-            projectGasProvider.getGasProvider(network, contractName));
+            projectContractStorageProvider().getAddress(network(), contractName()),
+            web3j(),
+            projectCredentialProvider().getCredential(caller),
+            projectGasProvider().getGasProvider(network(), contractName()));
     }
 
     protected final MyToken loadContract(Credentials caller) throws ProjectProviderFailureException {
         throwIfUndeployed();
         
         return MyToken.load(
-            projectContractStorageProvider.getAddress(network, contractName),
-            web3j,
+            projectContractStorageProvider().getAddress(network(), contractName()),
+            web3j(),
             caller,
-            projectGasProvider.getGasProvider(network, contractName));
+            projectGasProvider().getGasProvider(network(), contractName()));
     }
 
     @Override
-    public void deploy() throws Exception {
-        MyToken myToken = MyToken.deploy(
-            web3j,
-            projectCredentialProvider.getCredential(ProjectCredential.ADMIN),
-            projectGasProvider.getGasProvider(network, contractName),
-            projectCredentialProvider.getAddress(ProjectCredential.ADMIN)
+    protected Contract deployImpl() throws Exception {
+        return MyToken.deploy(
+            web3j(),
+            projectCredentialProvider().getCredential(ProjectCredential.ADMIN),
+            projectGasProvider().getGasProvider(network(), contractName()),
+            projectCredentialProvider().getAddress(ProjectCredential.ADMIN)
         ).send();
+    }
 
-        saveDeployedContract(myToken);
-        this.address = myToken.getContractAddress();
-        this.deployed = true;
+    /* ********************************************************************************************** */
+
+    public void transfer(ProjectCredential sender, String recipient, BigInteger amount) throws Exception {
+        MyToken myToken = loadContract(sender);
+        myToken.transfer(recipient, amount).send();
     }
 }
